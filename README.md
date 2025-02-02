@@ -14,8 +14,9 @@ Le projet combine l'analyse technique, le web scraping et l'apprentissage automa
 # Installation
 
 1. Cloner le dépôt sur votre machine :
-   bash ```
-   clone https://github.com/votre-username/predict-crypto-prices-using-classification.git
+   
+   ```bash
+   git clone https://github.com/votre-username/predict-crypto-prices-using-classification.git
    cd predict-crypto-prices-using-classification
    ```
 2. Installez les dépendances :
