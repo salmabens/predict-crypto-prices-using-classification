@@ -8,5 +8,17 @@ Ce projet utilise des techniques d'apprentissage automatique pour prédire l'év
 - SOL (Solana)
 - BTC (Bitcoin)
 
+# Description
+Le projet combine l'analyse technique, le web scraping et l'apprentissage automatique pour prédire les mouvements de prix des cryptomonnaies. Il utilise différents modèles de classification, notamment Random Forest et XGBoost, pour faire des prédictions sur la direction future des prix.
 
-# uvicorn CryptoAPI:app --reload
+# Installation
+
+1. Cloner le dépôt sur votre machine :
+   bash ```
+   clone https://github.com/votre-username/predict-crypto-prices-using-classification.git
+   cd predict-crypto-prices-using-classification
+   ```
+2. Installez les dépendances :
+   bash ```
+   pip install -r requirements.txt
+   ```
