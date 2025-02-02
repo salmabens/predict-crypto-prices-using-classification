@@ -11,49 +11,50 @@ Ce projet utilise des techniques d'apprentissage automatique pour prédire l'év
 # Description
 Le projet combine l'analyse technique, le web scraping et l'apprentissage automatique pour prédire les mouvements de prix des cryptomonnaies. Nous avons utilisé des techniques avancées pour récupérer et analyser des données sur six cryptomonnaies populaires : ETH (Ethereum), XRP (Ripple), LINK (Chainlink), SOL (Solana), BTC (Bitcoin) et BNB (Binance Coin).
 
-Étape 1 : Web Scraping et Collecte de Données
+### Étape 1 : Web Scraping et Collecte de Données
+  
 Nous avons réalisé un processus de web scraping sur un site spécialisé afin de collecter des données historiques de prix et d'autres informations pertinentes pour chaque cryptomonnaie. Le scraping nous a permis d'extraire des informations telles que les prix, les volumes de transactions, et d'autres données spécifiques nécessaires à l'analyse technique. Ces données ont ensuite été nettoyées et préparées pour l'analyse.
 
-Étape 2 : Calcul des Indicateurs Techniques
+### Étape 2 : Calcul des Indicateurs Techniques
+  
 Pour améliorer la qualité de nos prédictions, nous avons calculé plusieurs indicateurs techniques qui sont couramment utilisés dans le trading de cryptomonnaies. Ces indicateurs nous aident à analyser la tendance des prix et à anticiper leurs mouvements futurs. Les indicateurs calculés sont les suivants :
 
-RSI (Relative Strength Index) : Un indicateur de momentum qui mesure la vitesse et le changement des mouvements de prix pour identifier les conditions de surachat ou de survente.
-Stochastic Oscillator : Un indicateur de momentum qui compare le prix de clôture d'une cryptomonnaie par rapport à son prix sur une période donnée.
-Williams %R : Un autre indicateur de momentum similaire au Stochastic Oscillator, utilisé pour identifier les conditions de surachat et de survente.
-MACD (Moving Average Convergence Divergence) : Un indicateur qui suit les tendances, mesurant la relation entre deux moyennes mobiles.
-PROC (Percentage Rate of Change) : Mesure la variation en pourcentage du prix sur une période donnée, utile pour identifier les tendances de prix.
-OBV (On-Balance Volume) : Un indicateur de volume qui estime la pression d'achat et de vente en fonction des variations de prix et des volumes.
+- RSI (Relative Strength Index) : Un indicateur de momentum qui mesure la vitesse et le changement des mouvements de prix pour identifier les conditions de surachat ou de survente.
+- Stochastic Oscillator : Un indicateur de momentum qui compare le prix de clôture d'une cryptomonnaie par rapport à son prix sur une période donnée.
+- Williams %R : Un autre indicateur de momentum similaire au Stochastic Oscillator, utilisé pour identifier les conditions de surachat et de survente.
+- MACD (Moving Average Convergence Divergence) : Un indicateur qui suit les tendances, mesurant la relation entre deux moyennes mobiles.
+- PROC (Percentage Rate of Change) : Mesure la variation en pourcentage du prix sur une période donnée, utile pour identifier les tendances de prix.
+- OBV (On-Balance Volume) : Un indicateur de volume qui estime la pression d'achat et de vente en fonction des variations de prix et des volumes.
+
 Ces indicateurs ont été intégrés aux données de prix pour créer des ensembles de caractéristiques robustes, qui ont été utilisés dans les modèles de classification.
 
-Étape 3 : Modélisation et Prédiction avec Random Forest et XGBoost
+### Étape 3 : Modélisation et Prédiction avec Random Forest et XGBoost
 Une fois les données préparées, nous avons utilisé deux modèles de classification puissants pour prédire la direction future des prix des cryptomonnaies : Random Forest et XGBoost. Ces modèles sont particulièrement efficaces pour les tâches de classification et peuvent gérer des jeux de données avec une grande quantité de variables.
 
-Random Forest a été utilisé pour entraîner plusieurs arbres de décision, permettant de prédire si le prix d'une cryptomonnaie va augmenter ou diminuer sur une période donnée.
-XGBoost a été utilisé pour optimiser les performances de la prédiction en combinant plusieurs arbres de décision de manière séquentielle pour réduire les erreurs et améliorer la précision des prévisions.
+- Random Forest a été utilisé pour entraîner plusieurs arbres de décision, permettant de prédire si le prix d'une cryptomonnaie va augmenter ou diminuer sur une période donnée.
+- XGBoost a été utilisé pour optimiser les performances de la prédiction en combinant plusieurs arbres de décision de manière séquentielle pour réduire les erreurs et améliorer la précision des prévisions.
 Nous avons appliqué ces modèles sur plusieurs fenêtres de trading, ce qui nous a permis de réaliser des prédictions à court, moyen et long terme pour chaque cryptomonnaie.
 
-Étape 4 : API FastAPI (Backend)
+### Étape 4 : API FastAPI (Backend)
 Le projet inclut également une API FastAPI qui permet aux utilisateurs d'interagir avec différentes parties du système. Cette API expose plusieurs points de terminaison (endpoints) qui permettent d'exécuter des tâches automatisées et d’obtenir des prédictions basées sur les modèles de machine learning. Les endpoints principaux sont les suivants :
 
-Index Endpoint
+- Index Endpoint
 
 But : Fournir une explication concise de l'application et de ses capacités, ainsi qu'un lien vers la documentation de l'API et la liste des endpoints disponibles.
-Health Check Endpoint
+- Health Check Endpoint
 
 But : Permet de vérifier la disponibilité de l'API et l'état du système.
 Réponse attendue : Statistiques sur la santé du service et son statut actuel.
-Web Scraping Endpoint
+- Web Scraping Endpoint
 
 But : Permet d'exécuter des tâches de web scraping en fonction des paramètres fournis. Ce point de terminaison permet de récupérer des données à jour sur les cryptomonnaies.
 Réponse attendue : Données extraites du site de scraping pour chaque cryptomonnaie (ex : prix, volumes, etc.).
-Model Inference Endpoint
+- Model Inference Endpoint
 
 But : Exécuter des prédictions à l’aide des modèles de machine learning (Random Forest et XGBoost). Ce point de terminaison permet aux utilisateurs d’obtenir des prédictions sur la direction future des prix des cryptomonnaies.
-Fonctionnalités :
-Prise en charge de différents types de modèles.
-Validation et prétraitement des entrées pour garantir des données de qualité.
-Capacité à effectuer des prédictions en lot pour des ensembles de données.
+
 En résumé, ce projet offre une solution complète pour prédire les mouvements de prix des cryptomonnaies en utilisant des méthodes avancées de machine learning, d'analyse technique, de web scraping, et d'API pour l'interaction et l'automatisation des tâches. Grâce à cette approche intégrée, nous pouvons fournir des prédictions précises et en temps réel pour les traders de cryptomonnaies.
+
 # Installation
 
 1. Cloner le dépôt sur votre machine :
