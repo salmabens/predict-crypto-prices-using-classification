@@ -89,3 +89,19 @@ En résumé, ce projet offre une solution complète pour prédire les mouvements
    pip install -r requirements.txt
    ```
 
+## Contributeurs
+
+- **Sara LAVAL-JEANTET**
+- **Minh Nhat Thy HUYNH**
+- **Salma BENMOUSSA**
+
+Ce projet a été développé dans le cadre du Master MOSEF, à l'université Paris 1 Panthéon Sorbonne.
+
+## 📩 Contact
+
+N'hésitez pas à nous contacter pour toute question :
+
+- sara.jeantet@gmail.com
+- hmnthy@gmail.com
+- salmabenmoussa103@gmail.com 
+
