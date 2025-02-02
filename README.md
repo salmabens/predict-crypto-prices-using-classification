@@ -88,7 +88,33 @@ En résumé, ce projet offre une solution complète pour prédire les mouvements
    ```bash
    pip install -r requirements.txt
    ```
+## Structure des fichiers
+``` 
+/Data             # Contient les données scrapées
+    ├── BNB_data.csv  # Jeu de données pour BNB (Binance Coin)
+    ├── BTC_data.csv  # Jeu de données pour BTC (Bitcoin)
+    ├── ETH_data.csv  # Jeu de données pour ETH (Ethereum)
+    ├── XRP_data.csv  # Jeu de données pour XRP (Ripple)
+    ├── LINK_data.csv # Jeu de données pour LINK (Chainlink)
+    └── SOL_data.csv  # Jeu de données pour SOL (Solana)
 
+/random_forest_model.pkl  # Modèle Random Forest entraîné
+/xgboost_model.pkl        # Modèle XGBoost entraîné
+
+/resume_performances_randomforest.xslx # Comparaison des performances avec random forest
+/resume_performances_xgb_classifier.xslx # Comparaison des performances avec xgboost
+
+/full_crypto_prediction.ipynb      # Contient le notebook principal avec tous les plots
+
+/WebScraping.py      # Extraction de données depuis le web
+/DataPreprocessor.py # Prétraitement et nettoyage des données
+/TechnicalIndicators.py # Calcul des indicateurs techniques (RSI, MACD, etc.)
+/CryptoPrediction.py # Logique principale de prédiction et entraînement des modèles
+/CryptoAPI.py       # API FastAPI exposant les endpoints pour les prédictions, le scraping, etc.
+
+/README.md           # Documentation du projet
+/Requirements.txt    # Liste des dépendances Python
+```
 ## Contributeurs
 
 - **Sara LAVAL-JEANTET**
