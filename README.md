@@ -19,7 +19,34 @@ Le projet combine l'analyse technique, le web scraping et l'apprentissage automa
    git clone https://github.com/votre-username/predict-crypto-prices-using-classification.git
    cd predict-crypto-prices-using-classification
    ```
-2. Installez les dépendances :
-   bash ```
+
+2. Créer un environnement virtuel :
+   #### Sous Windows :
+         
+   ```bash
+   python -m venv env
+   ```
+   #### Sous macOS/Linux :
+         
+   ```bash
+   python3 -m venv env
+   ```
+3. Activer l'environnement virtuel :
+
+   #### Sous Windows :
+   
+   ```bash
+   .\env\Scripts\activate
+   ```
+   #### Sous macOS/Linux :
+   
+   ```bash
+   source env/bin/activate
+   ```
+
+4. Installer les dépendances avec pip :
+   
+   ```bash
    pip install -r requirements.txt
+   ```
    ```
