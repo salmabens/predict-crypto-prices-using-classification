@@ -38,10 +38,15 @@ Nous avons appliqué ces modèles sur plusieurs fenêtres de trading, ce qui nou
 ### Étape 4 : API FastAPI (Backend)
 Le projet inclut également une API FastAPI qui permet aux utilisateurs d'interagir avec différentes parties du système. Cette API expose plusieurs points de terminaison (endpoints) qui permettent d'exécuter des tâches automatisées et d’obtenir des prédictions basées sur les modèles de machine learning. Les endpoints principaux sont les suivants :
 
-- **Index Endpoint**: Fournir une explication concise de l'application et de ses capacités, ainsi qu'un lien vers la documentation de l'API et la liste des endpoints disponibles.
+- **Index Endpoint**: Fournit une explication concise de l'application et de ses capacités, ainsi qu'un lien vers la documentation de l'API et la liste des endpoints disponibles.
 - **Health Check Endpoint**: Permet de vérifier la disponibilité de l'API et l'état du système.
 - **Web Scraping Endpoint**: Permet d'exécuter des tâches de web scraping en fonction des paramètres fournis. Ce point de terminaison permet de récupérer des données à jour sur les cryptomonnaies.
-- **Model Inference Endpoint**: Exécuter des prédictions à l’aide des modèles de machine learning (Random Forest et XGBoost). Ce point de terminaison permet aux utilisateurs d’obtenir des prédictions sur la direction future des prix des cryptomonnaies.
+- **Model Inference Endpoint**: Exécute des prédictions à l’aide des modèles de machine learning (Random Forest et XGBoost). Ce point de terminaison permet aux utilisateurs d’obtenir des prédictions sur la direction future des prix des cryptomonnaies.
+
+Pour exécuter le script CryptoAPI.py, utilisez la commande suivante dans votre terminal :
+   ```bash
+   uvicorn CryptoAPI:app --reload
+   ```
 
 En résumé, ce projet offre une solution complète pour prédire les mouvements de prix des cryptomonnaies en utilisant des méthodes avancées de machine learning, d'analyse technique, de web scraping, et d'API pour l'interaction et l'automatisation des tâches. Grâce à cette approche intégrée, nous pouvons fournir des prédictions précises et en temps réel pour les traders de cryptomonnaies.
 
