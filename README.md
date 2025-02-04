@@ -88,7 +88,7 @@ En résumé, ce projet offre une solution complète pour prédire les mouvements
    ```bash
    pip install -r requirements.txt
    ```
-## Structure des fichiers
+# Structure des fichiers
 ``` 
 /Data             # Contient les données scrapées
     ├── BNB_data.csv  # Jeu de données pour BNB (Binance Coin)
@@ -115,7 +115,7 @@ En résumé, ce projet offre une solution complète pour prédire les mouvements
 /README.md           # Documentation du projet
 /Requirements.txt    # Liste des dépendances Python
 ```
-## Contributeurs
+# Contributeurs
 
 - **Sara LAVAL-JEANTET**
 - **Minh Nhat Thy HUYNH**
@@ -123,7 +123,7 @@ En résumé, ce projet offre une solution complète pour prédire les mouvements
 
 Ce projet a été développé dans le cadre du Master MOSEF, à l'université Paris 1 Panthéon Sorbonne.
 
-## 📩 Contact
+# 📩 Contact
 
 N'hésitez pas à nous contacter pour toute question :
 
