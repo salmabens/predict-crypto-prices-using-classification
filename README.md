@@ -1,4 +1,4 @@
-# Classification des Mouvements de Prix des Cryptomonnaies : Une Approche d'Apprentissage Automatique
+# 📊 Classification des Mouvements de Prix des Cryptomonnaies : Une Approche d'Apprentissage Automatique
 
 Ce projet utilise des techniques d'apprentissage automatique pour prédire l'évolution des prix de 6 cryptomonnaies en utilisant une approche par classification. Les cryptomonnaies prises en charge sont :
 
@@ -8,14 +8,14 @@ Ce projet utilise des techniques d'apprentissage automatique pour prédire l'év
 - SOL (Solana)
 - BTC (Bitcoin)
 
-# Description
+# 📋 Description
 Le projet combine l'analyse technique, le web scraping et l'apprentissage automatique pour prédire les mouvements de prix des cryptomonnaies. Nous avons utilisé des techniques avancées pour récupérer et analyser des données sur six cryptomonnaies populaires : ETH (Ethereum), XRP (Ripple), LINK (Chainlink), SOL (Solana), BTC (Bitcoin) et BNB (Binance Coin).
 
-### Étape 1 : Web Scraping et Collecte de Données
+### 🛠️ Étape 1 : Web Scraping et Collecte de Données
   
 Nous avons réalisé un processus de web scraping sur un site spécialisé afin de collecter des données historiques de prix et d'autres informations pertinentes pour chaque cryptomonnaie. Le scraping nous a permis d'extraire des informations telles que les prix, les volumes de transactions, et d'autres données spécifiques nécessaires à l'analyse technique. Ces données ont ensuite été nettoyées et préparées pour l'analyse.
 
-### Étape 2 : Calcul des Indicateurs Techniques
+### 📈 Étape 2 : Calcul des Indicateurs Techniques
   
 Pour améliorer la qualité de nos prédictions, nous avons calculé plusieurs indicateurs techniques qui sont couramment utilisés dans le trading de cryptomonnaies. Ces indicateurs nous aident à analyser la tendance des prix et à anticiper leurs mouvements futurs. Les indicateurs calculés sont les suivants :
 
@@ -28,14 +28,14 @@ Pour améliorer la qualité de nos prédictions, nous avons calculé plusieurs i
 
 Ces indicateurs ont été intégrés aux données de prix pour créer des ensembles de caractéristiques robustes, qui ont été utilisés dans les modèles de classification.
 
-### Étape 3 : Modélisation et Prédiction avec Random Forest et XGBoost
+### 🤖 Étape 3 : Modélisation et Prédiction avec Random Forest et XGBoost
 Une fois les données préparées, nous avons utilisé deux modèles de classification puissants pour prédire la direction future des prix des cryptomonnaies : Random Forest et XGBoost. Ces modèles sont particulièrement efficaces pour les tâches de classification et peuvent gérer des jeux de données avec une grande quantité de variables.
 
 - **Random Forest** a été utilisé pour entraîner plusieurs arbres de décision, permettant de prédire si le prix d'une cryptomonnaie va augmenter ou diminuer sur une période donnée.
 - **XGBoost** a été utilisé pour optimiser les performances de la prédiction en combinant plusieurs arbres de décision de manière séquentielle pour réduire les erreurs et améliorer la précision des prévisions.
 Nous avons appliqué ces modèles sur plusieurs fenêtres de trading, ce qui nous a permis de réaliser des prédictions à court, moyen et long terme pour chaque cryptomonnaie.
 
-### Étape 4 : API FastAPI (Backend)
+### 🌐 Étape 4 : API FastAPI (Backend)
 Le projet inclut également une API FastAPI qui permet aux utilisateurs d'interagir avec différentes parties du système. Cette API expose plusieurs points de terminaison (endpoints) qui permettent d'exécuter des tâches automatisées et d’obtenir des prédictions basées sur les modèles de machine learning. Les endpoints principaux sont les suivants :
 
 - **Index Endpoint**: Fournit une explication concise de l'application et de ses capacités, ainsi qu'un lien vers la documentation de l'API et la liste des endpoints disponibles.
@@ -50,7 +50,7 @@ Pour exécuter le script CryptoAPI.py, utilisez la commande suivante dans votre 
 
 En résumé, ce projet offre une solution complète pour prédire les mouvements de prix des cryptomonnaies en utilisant des méthodes avancées de machine learning, d'analyse technique, de web scraping, et d'API pour l'interaction et l'automatisation des tâches. Grâce à cette approche intégrée, nous pouvons fournir des prédictions précises et en temps réel pour les traders de cryptomonnaies.
 
-# Installation
+# 🖥️ Installation
 
 1. Cloner le dépôt sur votre machine :
    
@@ -88,7 +88,7 @@ En résumé, ce projet offre une solution complète pour prédire les mouvements
    ```bash
    pip install -r requirements.txt
    ```
-# Structure des fichiers
+# 🗂️ Structure des fichiers
 ``` 
 /Data             # Contient les données scrapées
     ├── BNB_data.csv  # Jeu de données pour BNB (Binance Coin)
@@ -115,7 +115,7 @@ En résumé, ce projet offre une solution complète pour prédire les mouvements
 /README.md           # Documentation du projet
 /Requirements.txt    # Liste des dépendances Python
 ```
-# Contributeurs
+# 👥 Contributeurs
 
 - **Sara LAVAL-JEANTET**
 - **Minh Nhat Thy HUYNH**
