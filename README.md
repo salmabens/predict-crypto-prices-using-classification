@@ -7,6 +7,7 @@ Ce projet utilise des techniques d'apprentissage automatique pour prédire l'év
 - LINK (Chainlink)
 - SOL (Solana)
 - BTC (Bitcoin)
+- BNB (Binance Coin)
 
 # 📋 Description
 Le projet combine l'analyse technique, le web scraping et l'apprentissage automatique pour prédire les mouvements de prix des cryptomonnaies. Nous avons utilisé des techniques avancées pour récupérer et analyser des données sur six cryptomonnaies populaires : ETH (Ethereum), XRP (Ripple), LINK (Chainlink), SOL (Solana), BTC (Bitcoin) et BNB (Binance Coin).
